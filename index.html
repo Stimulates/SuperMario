@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+	<link href="https://fonts.googleapis.com/css?family=Bungee+Shade|Press+Start+2P" rel="stylesheet">
+<style type="text/css">
+
+<style type="text/css">
+	body, html{
+		padding: 0;
+		margin: 0;
+	}
+	body{
+		background: black;
+
+	}
+
+	/*EL NAVVVVBARRRRRRRRRRRRRRRRR DEL ANO */
+
+  .menu-icon{
+      padding: 10px 20px 1px;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      margin-top: 0px;
+      margin-left: -3px;
+      border-radius: 7px;
+      border: solid black;
+      background-color: #2a2a2a;
+      color: white;
+      cursor: pointer;
+      font-size: 40px;
+
+
+    }
+
+    .menu-icon:hover {
+      color: #32CD32;
+    }
+
+    /*ima make it slide */
+    .menu {
+    margin: 0 auto;
+    width: 240px;
+    height: 300px;
+    top: 67px;
+    position: absolute;
+    left: -240px;
+    transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -ms-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+  }
+
+
+    .menu a {
+    display:block;
+    padding: 15px ;
+    text-align: left;
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    font-family: 'Press Start 2P', cursive;
+    background: -moz-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.1)); 
+   background: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.1)); 
+  }
+
+ .menu a:hover {
+    background:#2a2a2a ; 
+    color: #32CD32;
+    padding: 17px;
+    transition: 0.5s;
+  }
+
+   li{
+    list-style-type: none;
+  }
+
+   .menu:last-child a { 
+    border-bottom: none; 
+  }
+
+  #menuToggle:checked ~ .menu { 
+    position: absolute;left: 0; 
+  }
+
+  #menuToggle{
+      display: none;
+    }
+
+ a{
+  text-decoration: none;
+ }
+
+ /* End of Nav Bar el ano*/
+
+	#wrapper{
+		margin: 0;
+		padding: 0;
+		max-width: 1370px;
+	}
+	.backbutton{
+	position: absolute;
+	top: 726px;
+	left: 384px;
+	height: 200px;
+	font-size: 80px;
+	color: white;
+	background-color: black;
+    background: -moz-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.1)); 
+   background: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.1));
+   z-index: 1px;
+	}
+
+	.forwardbutton{
+	position: absolute;
+	top: 726px;
+	left: 1000px;
+	height: 200px;
+	font-size: 80px;
+	color: white;
+	background-color: black;
+    background: -moz-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.1)); 
+   background: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.1));
+   z-index: 1px;
+	}
+
+	.forwardbutton, .backbutton:focus{
+		outline: 0;
+	}
+
+	#slideshow{
+		margin-top: -4px;
+		height: 200px;
+	}
+	#buynow{
+		position: absolute;
+		top: 40px;
+		left: 1080px;
+
+	}
+
+	#rating{
+		position: relative;
+		padding-top: 40px;
+
+	}
+	span{
+		color: white;
+	}
+</style>
+</head>
+
+<body>
+<center>
+<div id="wrapper">
+
+<div id="background">
+		<img id="image" src="indexbackground.jpg" width="1370px" height="700px" style="position: relative; margin-top: 15px; border-top-left-radius: 50px; border-top-right-radius: 50px; ">
+</div>
+<!-- BUTTONS -->
+<button class="backbutton" onclick="plusDivs(-1)">&#10094;</button>
+<button class="forwardbutton" onclick="plusDivs(+1)">&#10095;</button>
+<!-- BUTTONS -->
+
+<!-- NAV BAR -->
+<input type="checkbox" id="menuToggle">
+<label for="menuToggle" class="menu-icon">&#9776;</label>
+
+<nav class="menu">
+    <b>
+    <a href ="home.html" style="color:#32CD32;background:#2a2a2a"; >HOME</a>
+    <a href ="characters.html" >CHARACTERS</a>
+    <b>
+</nav>
+<!-- NAV BAR  END ^ -->
+
+<!-- buy now -->
+<a target="_blank" href="http://www.nintendo.com/games/detail/wQWNJ-G34HwBUqJLV9qVY6XC5Dt-TE9N#retailers" ><img id ="buynow" src="buynow.png" width="300px"></a>
+
+<div id="slideshow" style="background: #0098cc; border-top: solid white; border-bottom-right-radius: 50px; border-bottom-left-radius: 50px;">
+
+<div class="mySlides">
+	<iframe width="560" height="200" src="https://www.youtube.com/embed/K4pJnV5OxPI" frameborder="0" allowfullscreen></iframe>
+</div>
+<div class="mySlides">
+	<iframe width="560" height="200" src="https://www.youtube.com/embed/K4c1Oeh24yk" frameborder="0" allowfullscreen></iframe>
+</div>
+<div class="mySlides">
+	<iframe width="560" height="200" src="https://www.youtube.com/embed/IQHa4qindfE" frameborder="0" allowfullscreen></iframe>
+</div>
+
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+ var slideIndex = 1;
+ showDivs(slideIndex);
+
+ function plusDivs(n){
+ 	showDivs(slideIndex += n);
+ }	
+
+	function showDivs(n){
+		var i;
+		var x = document.getElementsByClassName("mySlides");
+		if (n > x.length) {slideIndex = 1}
+		if (n < 1) {slideIndex = x.length}
+		for (i = 0; i < x.length; i++) {
+			x[i].style.display = "none";
+		}	
+			x[slideIndex-1].style.display = "block";
+	}
+
+</script>
+
+<img id="rating" src="rating.png" height="80px" width="200px">
+<div style="padding-top: 20px"> <span>© 2012 - 2013 Nintendo. Nintendo properties are trademarks of Nintendo, Don't sue me Nintendo I'm helping ya out... I won't send ya the bill.</span></div>
+<div style="padding-top: 20px"><span style="color: grey;">* Additional accessories required for multiplayer mode. Sold separately.</span> </div>
+
+
+<!-- wrapper -->
+</div>
+<center>
+</body>
+</html>
